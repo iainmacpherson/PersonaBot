@@ -1,0 +1,4 @@
+{
+    "BotToken"      : "Put your Bot's token here.",
+    "OpenAIApiKey"  : "Put your Open AI API Key here"
+}

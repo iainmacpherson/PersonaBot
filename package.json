@@ -1,0 +1,24 @@
+{
+  "name": "personabot",
+  "version": "1.0.0",
+  "description": "PersonaBot is an AI-powered Discord chatbot designed to bring fictional characters to life. Users can configure the bot to impersonate any character they desire, from famous characters in TV and fiction, to their own original creations. PersonaBot uses GPT-3 technology to generate responses that mimic the personality, tone, and style of the chosen character, providing immersive comments in the voice of your favourite characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainmacpherson/PersonaBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iainmacpherson/PersonaBot/issues"
+  },
+  "homepage": "https://github.com/iainmacpherson/PersonaBot#readme",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "openai": "^3.2.1"
+  }
+}
