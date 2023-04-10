@@ -1,4 +1,5 @@
 {
-    "BotToken"      : "Put your Bot's token here.",
-    "OpenAIApiKey"  : "Put your Open AI API Key here"
+    "BotToken"      : "Your Discord Token goes here.",
+    "OpenAIApiKey"  : "Your OpenAI API key goes here.",
+    "clientId"      : "Your Application ID goes here."
 }

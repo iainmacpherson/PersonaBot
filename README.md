@@ -4,25 +4,39 @@ PersonaBot is an AI-powered Discord chatbot designed to bring fictional characte
 
 ## Getting Started
 ### Prerequisites
-Create an OpenAI account and get an API Key [here](https://openai.com/blog/openai-api).
+An OpenAI API Key (see [OpenAI website](https://openai.com/blog/openai-api)) and a Discord Bot Token (see [Discord website](https://discord.com/developers/applications) and [Bot Creation tutorial](https://discordjs.guide/preparations/setting-up-a-bot-application.html)).
 
-Create a Discord Bot and get a bot Token [here](https://discord.com/developers/applications).
+Note the following when creating the Discord bot:
 1. Must have at least the following permissions:
+    * Commands scope
     * _TODO_
+
 2. Must enable the following settings in the Bot Settings page after creation:
     * _TODO_
 
 ### Configuration
 _TODO_
 
-
-
-
 ### Token Safety
-The Discord bot token and the OpenAI API key should never be made public. One way to make sure that they won't be accidentally committed is to tell git to ignore them using the following command:
+The Discord bot token and the OpenAI API key should never be made public. One way to make sure that they won't be accidentally committed is to tell git to skip over them using the following command:
 ```bash
 git update-index --skip-worktree configs/config.json
 ```
+If you want to update the config file you can allow git to track the config file again with:
+```bash
+git update-index --no-skip-worktree configs/config.json
+```
+
+## Usage
+First deploy the slash commands globally (needed for the first time or if any of the commands change):
+```bash
+node deploy_commands.js
+```
+Now start the bot with all the required functionality:
+```bash
+node .
+```
+Congratulations, your bot is now operational!
 
 ## Customisation
 The `configs/character.json` file is used to build the bot's character. Edit this file to create the bot's character. Feel free to create your own attributes and experiment to see what works best. All attributes are added to the prompt provided to the OpenAI API when generating text and will inform it's responses.
