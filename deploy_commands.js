@@ -1,7 +1,7 @@
 /* Registers and updates the slash commands for the bot application. */
 
 const { REST, Routes } = require('discord.js');
-const { clientId, guildId, token } = require('./config.json');
+const { clientId, BotToken} = require('./configs/config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -9,7 +9,6 @@ const commands = [];
 // get all the command file names from the commands directory
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
-
 // prepare each command for deployment
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
@@ -17,7 +16,7 @@ for (const file of commandFiles) {
 }
 
 // create an instance of the REST module
-const rest = new REST().setToken(token)
+const rest = new REST().setToken(BotToken);
 
 // Command deployment
 (async() => {
@@ -34,4 +33,4 @@ const rest = new REST().setToken(token)
         // log any errors
         console.error(error);
     }
-});
+})();

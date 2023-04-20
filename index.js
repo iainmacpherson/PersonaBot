@@ -1,13 +1,6 @@
 // Import config information 
 const config = require('./configs/config.json');
 
-// Setup OpenAI API
-const { Configuration, OpenAIApi } = require('openai');
-const configuration = new Configuration({
-    apiKey: config.OpenAIApiKey
-});
-const openai = new OpenAIApi(configuration);
-
 // Setup the Discord API
 
 // Allow the bot to access global level messages and their contents

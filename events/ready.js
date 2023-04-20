@@ -1,10 +1,13 @@
+// The ready event is triggered when the bot has just logged in.
 const { Events } = require('discord.js');
+const bot = require('../bot/bot.js');
 
 module.exports = {
     name: Events.ClientReady,
     once: true,
-    execute(client) {
+    async execute(client) {
         console.log(`Logged in as ${client.user.tag}`);
-        // TODO: start bot here
+        // initialise the bot
+        await bot.init();
     }
 };

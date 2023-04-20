@@ -1,3 +1,4 @@
+// handles the event produced when a command is called
 const { Events } = require('discord.js');
 
 module.exports = {
