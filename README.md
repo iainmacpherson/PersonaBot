@@ -1,4 +1,7 @@
 # PersonaBot
+
+*Note: This was a quick simple project created as an excuse for me to learn some Javascript and to explore the OpenAI and Discord APIs a little.*
+
 ## Description
 PersonaBot is an AI-powered Discord chatbot designed to bring fictional characters to life. Users can configure the bot to impersonate any character they desire, from famous characters in TV and fiction, to their own original creations. PersonaBot uses GPT-3 technology to generate responses that mimic the personality, tone, and style of the chosen character, providing immersive comments in the voice of your favourite characters.
 
