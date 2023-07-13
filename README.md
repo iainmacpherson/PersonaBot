@@ -64,6 +64,8 @@ node .
 ```
 Congratulations, your bot is now operational!
 
+In discord you can now use `/chat` to speak to the bot.
+
 ## TODO List
 * error handling
 * message content activated bot messages.
